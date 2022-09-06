@@ -40,6 +40,10 @@ h3{
   vertical-align: middle;
 }
 
+.stage{
+  padding-top: 30px;
+}
+
 #first{
   color: white;
   background-color: #55A6EC;
