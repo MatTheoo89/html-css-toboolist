@@ -19,8 +19,13 @@ main{
 }
 
 section{
+  margin: 10px;
   background-color: #FFFFFF;
   border-radius: 10px;
+}
+
+h3{
+  display: inline;
 }
 
 .container{
@@ -28,17 +33,10 @@ section{
   margin: 0 auto;
 }
 
-#header-top{
+#head{
   font-size: 50px;
   font-weight: bold;
   vertical-align: middle;
-}
-
-.form{
-  padding: 7px;
-  margin: 5px;
-  font-weight: 600;
-  border-radius: 5px;
 }
 
 #first{
@@ -52,7 +50,44 @@ section{
   border: 2px solid #C6CBCF;
 }
 
-.button{
+#editor{
+  background-color: #55A6EC;
+}
+
+
+.form{
+  padding: 7px;
+  margin: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.box{
   padding: 20px;
   border-radius: 10px;
+}
+
+.box h1{
+  display: inline-block;
+}
+
+.fake-button{
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.circle{
+  width: 10px;
+  height: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  color: #6AB8A1;
+  border: 1px solid #6AB8A1;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.space{
+  padding: 10px 0;
 }
