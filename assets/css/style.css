@@ -26,6 +26,7 @@ section{
 
 h3{
   display: inline;
+  padding-left: 10px;
 }
 
 .container{
@@ -54,6 +55,17 @@ h3{
   background-color: #55A6EC;
 }
 
+#q1-goals{
+  background-color: #906CDE;
+}
+
+#recruting{
+  background-color: #6AB8A1;
+}
+
+#mobile{
+  background-color: #E79539;
+}
 
 .form{
   padding: 7px;
@@ -82,12 +94,20 @@ h3{
   height: 10px;
   font-weight: bold;
   vertical-align: middle;
-  color: #6AB8A1;
-  border: 1px solid #6AB8A1;
   border-radius: 50%;
   padding: 4px;
 }
 
 .space{
-  padding: 10px 0;
+  padding: 10px;
+}
+
+#green{
+  color: #6AB8A1;
+  border: 1px solid #6AB8A1;
+}
+
+#red{
+  color: red;
+  border: 1px solid red;
 }
