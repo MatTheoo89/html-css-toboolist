@@ -10,104 +10,85 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Toboolist</title>
 </head>
+
 <body>
-  
+
   <header>
-
-    <div id="head">
-      <img src="assets/img/Logo.png" alt="Logo Gmail">
-      <span>Toboolist</span>
-    </div>
-
+    <img src="assets/img/Logo.png" alt="logo">
+    <span>Toboolist</span>
   </header>
 
-  <main>
-    <div class="container">
-      
-      <section class="box">
-        <div>
-          <span class="form" id="first">Add Task</span>
-          <span class="form" id="second">Add Section</span>
-        </div>
-      </section>  
-
-      <section class="box">
-        
-        <div class="stage">
-          <span>&#9660</span>
-          <h1>New Task</h1>
-        </div>
-        
-        <div class="space">
-          <span class="circle" id="green">&check;</span>
-          <h3>Quarterly Newsletter</h3>
-          <span class="fake-button" id="editor"> Editorial</span>
-        </div>
-              
-        <div class="stage">
-          <span>&#9660</span>
-          <h1>Today</h1>
-        </div>
-        
-          <div class="space">
-            <span class="circle" id="green">&check;</span>
-            <h3>Recruting blog post</h3>
-            <span class="fake-button" id="editor"> Editorial</span>
-          </div>
-
-          <div class="space">
-            <span class="circle" id="green">&check;</span>
-            <h3>Mobile app launch</h3>
-            <span class="fake-button" id="q1-goals"> Q1 Goals</span>
-          </div>
-
-          <div class="space">
-            <span class="circle" id="red">&#10008;</span>
-            <h3>Interview John H.</h3>
-            <span class="fake-button" id="recruting"> Recruting</span>
-          </div>
-
-          <div class="space">
-            <span class="circle" id="green">&check;</span>
-            <h3>Summit update to mobile storefronts</h3>
-            <span class="fake-button" id="mobile"> Mobile</span>
-          </div>
-
-        <div class="stage">
-          <span>&#9660</span>
-          <h1>New Task</h1>
-        </div>
-        
-          <div class="space">
-            <span class="circle" id="red">&#10008;</span>
-            <h3>Schedule meeting with Alex</h3>
-          </div>
-
-          <div class="space">
-            <span class="circle" id="green">&check;</span>
-            <h3>Homepage refresh</h3>
-            <span class="fake-button" id="website"> Website</span>
-          </div>
-
-          <div class="space">
-            <span class="circle" id="green">&check;</span>
-            <h3>Onboard new Sales team members</h3>
-            <span class="fake-button" id="sales"> Sales</span>
-          </div>
-
-          <div class="space">
-            <span class="circle" id="green">&check;</span>
-            <h3>Review editorial calendar</h3>
-            <span class="fake-button" id="editor"> Editorial</span>
-          </div>
-      
-      </section> 
+  <main class="container">
+    
+    <div class="section">
+      <section>
+        <span class="button-nav" id="task">Add Task</span>
+        <span class="button-nav" id="sec">Add Section</span>
+      </section>
     </div>
   
+      <div class="section">
+        <section>
+          <span>&#9660</span>
+          <h1>New Task</h1> <br>
+          <span class="circle verde">✓</span>
+          <h3>Quarterly Newsletter</h3>
+          <span id="editor" class="button"> Editorial </span>
+        </section>
+
+        <section>
+          <span>&#9660</span>
+          <h1>Today</h1> <br>
+          <span class="circle verde">✓</span>
+          <h3>Recruting blog post</h3>
+          <span id="editor" class="button"> Editorial </span>
+        </section>
+
+        <section>
+          <span class="circle verde">✓</span>
+          <h3>Mobile app launch</h3>
+          <span id="goals" class="button">  Q1 Goals </span>
+        </section>
+        
+        <section>
+          <span class="circle verde">✓</span>
+          <h3>Interview John H.</h3>
+          <span id="reclutin" class="button"> Reclutin </span>
+        </section>
+        
+        <section>
+          <span class="circle red">&#10008;</span>
+          <h3>Summit update to mobile storefronts</h3>
+          <span id="mobile" class="button"> Mobile </span>
+        </section>
+        
+        <section>
+          <span>&#9660</span>
+          <h1>Upcoming</h1> <br>
+          <span class="circle red">&#10008;</span>
+          <h3>Schedule meeting with Alex</h3>
+        </section>
+
+        <section>
+          <span class="circle verde">✓</span>
+          <h3>Homepage refresh</h3>
+          <span id="website" class="button"> Website </span>
+        </section>
+        
+        <section>
+          <span class="circle verde">✓</span>
+          <h3>Onboard new Sales team members</h3>
+          <span id="sales" class="button"> Sales </span>
+        </section>
+        
+        <section>
+          <span class="circle verde">✓</span>
+          <h3>Review editorial calendar</h3>
+          <span id="editor" class="button"> Editorial </span>
+        </section>
+
+      </div> 
   </main>
 
-  <footer>
-    <!-- NON USATO -->
-  </footer>
 </body>
 </html>
