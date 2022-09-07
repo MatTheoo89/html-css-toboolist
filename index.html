@@ -6,88 +6,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Toboolist</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Toboolist</title>
 </head>
 
 <body>
-
+  
   <header>
-    <img src="assets/img/Logo.png" alt="logo">
-    <span>Toboolist</span>
+    <img src="assets/img/Logo.png" alt="logo" id="logo">
+    <span id="logo-text">Toboolist</span>
   </header>
-
-  <main class="container">
+  
+  <main>
     
-    <div class="section">
-      <section>
-        <span class="button-nav" id="task">Add Task</span>
-        <span class="button-nav" id="sec">Add Section</span>
-      </section>
+    <div class="container">
+      <div class="top">
+        <button class="btn btn-filled">Add Task</button>
+        <button class="btn btn-empty">Add Section</button>
+      </div>
+      
+      <div class="task">
+        
+        <ul>
+          
+          <li>
+            <h3>New Task</h3>
+            <ul>
+              <li>
+                <span class="circle checked"> Quarterly Newsletter</span>
+                <span class="tag editorial">Editorial</span>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <h3>Today</h3>
+            <ul>
+              <li>
+                <span class="circle checked"> Recruting blog post</span>
+                <span class="tag editorial">Editorial</span>
+              </li>
+
+              <li>
+                <span class="circle checked"> Mobile app launch</span>
+                <span class="tag q1">Q1 Goals</span>
+              </li>
+              
+              <li>
+                <span class="circle checked"> Interview John H.</span>
+                <span class="tag recluting">Recluting</span>
+              </li>
+
+              <li>
+                <span class="circle unchecked"> Summit update to mobile storefronts</span>
+                <span class="tag mobile">Mobile</span>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <h3>Upcoming</h3>
+            <ul>
+              <li>
+                <span class="circle unchecked"> Schedule meeting with Alex</span>
+              </li>
+
+              <li>
+                <span class="circle checked"> Homepage refresh</span>
+                <span class="tag website">Website</span>
+              </li>
+              
+              <li>
+                <span class="circle checked"> Onboard new Sales team members</span>
+                <span class="tag sales">Sales</span>
+              </li>
+
+              <li>
+                <span class="circle checked"> Review editorial calendar</span>
+                <span class="tag editorial">Editorial</span>
+              </li>
+            </ul>
+          </li>
+        
+        </ul>
+      
+      </div>
+    
     </div>
   
-      <div class="section">
-        <section>
-          <span>&#9660</span>
-          <h1>New Task</h1> <br>
-          <span class="circle verde">✓</span>
-          <h3>Quarterly Newsletter</h3>
-          <span id="editor" class="button"> Editorial </span>
-        </section>
-
-        <section>
-          <span>&#9660</span>
-          <h1>Today</h1> <br>
-          <span class="circle verde">✓</span>
-          <h3>Recruting blog post</h3>
-          <span id="editor" class="button"> Editorial </span>
-        </section>
-
-        <section>
-          <span class="circle verde">✓</span>
-          <h3>Mobile app launch</h3>
-          <span id="goals" class="button">  Q1 Goals </span>
-        </section>
-        
-        <section>
-          <span class="circle verde">✓</span>
-          <h3>Interview John H.</h3>
-          <span id="reclutin" class="button"> Reclutin </span>
-        </section>
-        
-        <section>
-          <span class="circle red">&#10008;</span>
-          <h3>Summit update to mobile storefronts</h3>
-          <span id="mobile" class="button"> Mobile </span>
-        </section>
-        
-        <section>
-          <span>&#9660</span>
-          <h1>Upcoming</h1> <br>
-          <span class="circle red">&#10008;</span>
-          <h3>Schedule meeting with Alex</h3>
-        </section>
-
-        <section>
-          <span class="circle verde">✓</span>
-          <h3>Homepage refresh</h3>
-          <span id="website" class="button"> Website </span>
-        </section>
-        
-        <section>
-          <span class="circle verde">✓</span>
-          <h3>Onboard new Sales team members</h3>
-          <span id="sales" class="button"> Sales </span>
-        </section>
-        
-        <section>
-          <span class="circle verde">✓</span>
-          <h3>Review editorial calendar</h3>
-          <span id="editor" class="button"> Editorial </span>
-        </section>
-
-      </div> 
   </main>
 
 </body>

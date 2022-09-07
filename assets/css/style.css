@@ -1,122 +1,130 @@
-/* RESET PRESET */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-.container{
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 body{
-  background-color: #F6F8F9;;
+  /* Font in body */
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F7F8;
 }
+
+/* BUTTON */
+.btn{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-filled{
+  background-color: #55A6EC;;
+  color: white;
+  border: 1px solid #55A6EC;
+}
+
+.btn-empty{
+  background-color: white;
+  color: lightgrey;
+  border: 1px solid lightgrey;
+}
+/* /BUTTON */
 
 header{
-  padding: 10px;
+  height: 70px;
   background-color: white;
+  padding: 10px 20px;
+  margin-bottom: 40px;
 }
 
-header span{
-  font-size: 60px;
-  font-weight: bold;
+#logo{
+  /* Per centrare in header il logo */
+  height: 100%;
+  vertical-align: middle;
 }
 
-main{
-  margin: 5px;
-  padding-bottom: 30px;
+#logo-text{
+  font-size: 38px;
+  font-weight: 900;
+  /* SOLO con size diversi dal STD */
+  vertical-align: middle;
 }
 
-section{
-  padding: 15px 30px;
-}
-
-h1{
-  display: inline-block;
-}
-
-h3{
-  display: inline;
-}
-
-.section{
+.container{
+  width: 70%;
+  margin: 0 auto;
   background-color: white;
-  margin: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-.section span{
-  margin: 10px;
+.container .top{
+  padding: 20px 50px;
+  /* Questo per fare il bordo basso, stesso colore sfondo */
+  border-bottom: 4px solid #F5F7F8;
+}
+
+.container .task{
+  padding: 20px 50px;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li, ul li h3{
+  margin-bottom: 20px;
+}
+
+li h3::before{
+  content: '\25BC';
+  padding-right: 5px;
+}
+
+li .circle::before{
   display: inline-block;
-}
-
-.button-nav{
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: 800;
-}
-
-.circle{
-  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
   text-align: center;
-  padding: 2px 7px;
+  font-size: 10px;
+  border-radius: 50%;
 }
 
-.button{
+li .circle.checked::before{
+  content: '\2713';
+  color: green;
+  border: 1px solid green;
+}
+
+li .circle.unchecked::before{
+  content: '\2715';
+  color: red;
+  border: 1px solid red;
+}
+
+.tag{
+  font-size: 10px;
+  background-color: aqua;
   color: white;
   padding: 5px 10px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
-.verde{
-  color: #6AB8A1;
-border: 2px solid #6AB8A1;
-}
-
-.red{
-  color:  red;
-border: 2px solid red;
-}
-
-#task{
-  color: white;
+.tag.editorial{
   background-color: #55A6EC;
-  border: 2px solid #55A6EC;
 }
-
-#sec{
-  color: #C6CBCF;
-border: 2px solid #C6CBCF;
-}
-
-#editor{
-  background-color: #55A6EC;
-  border: 2px solid #55A6EC;
-}
-
-#goals{
+.tag.q1{
   background-color: #906CDE;
-  border: 2px solid #906CDE;
 }
-
-#reclutin{
-  background-color: #6AB8A1;
-  border: 2px solid #6AB8A1;
+.tag.website{
+  background-color: #e155f3;
 }
-#mobile{
-  background-color: #E79539;
-  border: 2px solid #E79539;
-}
-#website{
-  background-color: #C95D98;;
-  border: 2px solid #C95D98;;
-}
-#sales{
+.tag.sales{
   background-color: #AAC132;
-  border: 2px solid #AAC132;
+}
+.tag.mobile{
+  background-color: #E79539;
+}
+.tag.recluting{
+  background-color: #6AB8A1;
 }
